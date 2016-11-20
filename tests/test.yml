@@ -1,8 +1,6 @@
 ---
-- hosts: all
-
-  vars:
-    nginx_use_ppa: true
-
+- hosts: localhost
+  connection: local
+#  remote_user: nhashimo
   roles:
-    - role_under_test
+  - ansible-role-nginx
